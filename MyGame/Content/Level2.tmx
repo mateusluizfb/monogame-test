@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.2" tiledversion="1.2.0" orientation="orthogonal" renderorder="left-up" width="270" height="12" tilewidth="16" tileheight="16" infinite="0" backgroundcolor="#e0ce8b" nextlayerid="10" nextobjectid="138">
+ <tileset firstgid="1" name="entities_tileset" tilewidth="16" tileheight="16" tilecount="90" columns="9">
+  <image source="phase_2_entities_tileset.png" width="144" height="160"/>
+ </tileset>
+ <objectgroup id="3" name="Instances">
+  <object id="22" gid="1" x="48" y="80" width="16" height="16"/>
+  <object id="23" type="EnemyBomb" gid="2" x="384" y="96" width="16" height="16">
+   <properties>
+    <property name="Behaviour" value="UpDown"/>
+    <property name="GoingDown" value="false"/>
+    <property name="Range" value="16"/>
+   </properties>
+  </object>
+  <object id="26" type="EnemySpace" gid="5" x="2016" y="16" width="16" height="16"/>
+  <object id="28" type="EnemyMeteor" gid="6" x="2352" y="44" width="16" height="16">
+   <properties>
+    <property name="Size" value="MD"/>
+   </properties>
+  </object>
+  <object id="29" type="EnemyMeteor" gid="6" x="2372" y="24" width="16" height="16">
+   <properties>
+    <property name="Size" value="SM"/>
+   </properties>
+  </object>
+  <object id="30" type="EnemyHelicopterGun" gid="3" x="624" y="76" width="16" height="16">
+   <properties>
+    <property name="Behaviour" value="UpDown"/>
+    <property name="GoingDown" value="false"/>
+    <property name="Range" value="32"/>
+   </properties>
+  </object>
+  <object id="34" type="Coin" gid="8" x="160" y="80" width="16" height="16"/>
+  <object id="36" type="Coin" gid="8" x="176" y="80" width="16" height="16"/>
+  <object id="37" type="Coin" gid="8" x="176" y="96" width="16" height="16"/>
+  <object id="38" type="Coin" gid="8" x="192" y="80" width="16" height="16"/>
+  <object id="40" type="EnemyBomb" gid="2" x="320" y="64" width="16" height="16">
+   <properties>
+    <property name="Behaviour" value="UpDown"/>
+    <property name="GoingDown" value="false"/>
+    <property name="Range" value="16"/>
+   </properties>
+  </object>
+  <object id="41" type="Coin" gid="8" x="336" y="58" width="16" height="16"/>
+  <object id="42" type="Coin" gid="8" x="336" y="70" width="16" height="16"/>
+  <object id="43" type="Coin" gid="8" x="400" y="90" width="16" height="16"/>
+  <object id="44" type="Coin" gid="8" x="400" y="102" width="16" height="16"/>
+  <object id="45" type="EnemyBomb" gid="2" x="528" y="44" width="16" height="16">
+   <properties>
+    <property name="Behaviour" value="UpDown"/>
+    <property name="GoingDown" value="false"/>
+    <property name="Range" value="16"/>
+   </properties>
+  </object>
+  <object id="46" type="EnemyBomb" gid="2" x="560" y="75" width="16" height="16">
+   <properties>
+    <property name="Behaviour" value="UpDown"/>
+    <property name="GoingDown" value="false"/>
+    <property name="Range" value="16"/>
+   </properties>
+  </object>
+  <object id="47" type="EnemyBomb" gid="2" x="528" y="107" width="16" height="16">
+   <properties>
+    <property name="Behaviour" value="UpDown"/>
+    <property name="GoingDown" value="false"/>
+    <property name="Range" value="16"/>
+   </properties>
+  </object>
+  <object id="48" type="EnemyBomb" gid="2" x="560" y="139" width="16" height="16">
+   <properties>
+    <property name="Behaviour" value="LeftRight"/>
+    <property name="GoingLeft" value="true"/>
+    <property name="Range" value="16"/>
+   </properties>
+  </object>
+  <object id="49" type="EnemyBomb" gid="2" x="560" y="20" width="16" height="16">
+   <properties>
+    <property name="Behaviour" value="LeftRight"/>
+    <property name="GoingLeft" value="true"/>
+    <property name="Range" value="16"/>
+   </properties>
+  </object>
+  <object id="50" type="Coin" gid="8" x="544" y="75" width="16" height="16"/>
+  <object id="51" type="Coin" gid="8" x="560" y="59" width="16" height="16"/>
+  <object id="52" type="Coin" gid="8" x="576" y="75" width="16" height="16"/>
+  <object id="53" type="Coin" gid="8" x="560" y="91" width="16" height="16"/>
+  <object id="54" type="EnemyBomb" gid="2" x="592" y="20" width="16" height="16">
+   <properties>
+    <property name="Behaviour" value="EnemyEmptyBehaviour"/>
+    <property name="GoingLeft" value="true"/>
+    <property name="Range" value="16"/>
+   </properties>
+  </object>
+  <object id="55" type="EnemyBomb" gid="2" x="592" y="44" width="16" height="16">
+   <properties>
+    <property name="Behaviour" value="UpDown"/>
+    <property name="GoingLeft" value="false"/>
+    <property name="Range" value="16"/>
+   </properties>
+  </object>
+  <object id="56" type="EnemyBomb" gid="2" x="592" y="110" width="16" height="16">
+   <properties>
+    <property name="Behaviour" value="UpDown"/>
+    <property name="GoingLeft" value="false"/>
+    <property name="Range" value="16"/>
+   </properties>
+  </object>
+  <object id="57" type="EnemyBomb" gid="2" x="592" y="139" width="16" height="16">
+   <properties>
+    <property name="Behaviour" value="EnemyEmptyBehaviour"/>
+    <property name="GoingLeft" value="true"/>
+    <property name="Range" value="16"/>
+   </properties>
+  </object>
+  <object id="58" type="EnemyBomb" gid="2" x="768" y="48" width="16" height="16">
+   <properties>
+    <property name="Behaviour" value="UpDown"/>
+    <property name="GoingDown" value="false"/>
+    <property name="Range" value="16"/>
+   </properties>
+  </object>
+  <object id="59" type="EnemyBomb" gid="2" x="832" y="32" width="16" height="16">
+   <properties>
+    <property name="Behaviour" value="UpDown"/>
+    <property name="GoingDown" value="false"/>
+    <property name="Range" value="16"/>
+   </properties>
+  </object>
+  <object id="60" type="EnemyBomb" gid="2" x="800" y="40" width="16" height="16">
+   <properties>
+    <property name="Behaviour" value="UpDown"/>
+    <property name="GoingDown" value="false"/>
+    <property name="Range" value="16"/>
+   </properties>
+  </object>
+  <object id="61" type="Coin" gid="8" x="768" y="64" width="16" height="16"/>
+  <object id="62" type="Coin" gid="8" x="800" y="64" width="16" height="16"/>
+  <object id="63" type="Coin" gid="8" x="832" y="64" width="16" height="16"/>
+  <object id="64" type="EnemyBomb" gid="2" x="832" y="80" width="16" height="16">
+   <properties>
+    <property name="Behaviour" value="UpDown"/>
+    <property name="GoingDown" value="false"/>
+    <property name="Range" value="16"/>
+   </properties>
+  </object>
+  <object id="65" type="EnemyBomb" gid="2" x="768" y="96" width="16" height="16">
+   <properties>
+    <property name="Behaviour" value="UpDown"/>
+    <property name="GoingDown" value="false"/>
+    <property name="Range" value="16"/>
+   </properties>
+  </object>
+  <object id="66" type="EnemyBomb" gid="2" x="800" y="88" width="16" height="16">
+   <properties>
+    <property name="Behaviour" value="UpDown"/>
+    <property name="GoingDown" value="false"/>
+    <property name="Range" value="16"/>
+   </properties>
+  </object>
+  <object id="67" type="EnemyBomb" gid="2" x="928" y="64" width="16" height="16">
+   <properties>
+    <property name="Behaviour" value="UpDown"/>
+    <property name="GoingDown" value="false"/>
+    <property name="Range" value="16"/>
+   </properties>
+  </object>
+  <object id="68" type="EnemyBomb" gid="2" x="864" y="80" width="16" height="16">
+   <properties>
+    <property name="Behaviour" value="UpDown"/>
+    <property name="GoingDown" value="false"/>
+    <property name="Range" value="16"/>
+   </properties>
+  </object>
+  <object id="69" type="EnemyBomb" gid="2" x="896" y="72" width="16" height="16">
+   <properties>
+    <property name="Behaviour" value="UpDown"/>
+    <property name="GoingDown" value="false"/>
+    <property name="Range" value="16"/>
+   </properties>
+  </object>
+  <object id="73" type="EnemyBomb" gid="2" x="928" y="112" width="16" height="16">
+   <properties>
+    <property name="Behaviour" value="UpDown"/>
+    <property name="GoingDown" value="false"/>
+    <property name="Range" value="16"/>
+   </properties>
+  </object>
+  <object id="74" type="EnemyBomb" gid="2" x="864" y="128" width="16" height="16">
+   <properties>
+    <property name="Behaviour" value="UpDown"/>
+    <property name="GoingDown" value="false"/>
+    <property name="Range" value="16"/>
+   </properties>
+  </object>
+  <object id="75" type="EnemyBomb" gid="2" x="896" y="120" width="16" height="16">
+   <properties>
+    <property name="Behaviour" value="UpDown"/>
+    <property name="GoingDown" value="false"/>
+    <property name="Range" value="16"/>
+   </properties>
+  </object>
+  <object id="76" type="Coin" gid="8" x="864" y="96" width="16" height="16"/>
+  <object id="77" type="Coin" gid="8" x="896" y="96" width="16" height="16"/>
+  <object id="78" type="Coin" gid="8" x="928" y="96" width="16" height="16"/>
+  <object id="79" type="EnemyZeppelin" gid="4" x="1024" y="55" width="16" height="16">
+   <properties>
+    <property name="Behaviour" value="Empty"/>
+   </properties>
+  </object>
+  <object id="81" type="EnemyBomb" gid="2" x="1072" y="32" width="16" height="16">
+   <properties>
+    <property name="Behaviour" value="Empty"/>
+   </properties>
+  </object>
+  <object id="82" type="EnemyBomb" gid="2" x="1072" y="128" width="16" height="16">
+   <properties>
+    <property name="Behaviour" value="Empty"/>
+   </properties>
+  </object>
+  <object id="86" type="EnemyBomb" gid="2" x="1264" y="80" width="16" height="16">
+   <properties>
+    <property name="Behaviour" value="Empty"/>
+   </properties>
+  </object>
+  <object id="87" type="EnemyBomb" gid="2" x="1312" y="80" width="16" height="16">
+   <properties>
+    <property name="Behaviour" value="Empty"/>
+   </properties>
+  </object>
+  <object id="88" type="EnemyBomb" gid="2" x="1360" y="80" width="16" height="16">
+   <properties>
+    <property name="Behaviour" value="Empty"/>
+   </properties>
+  </object>
+  <object id="89" type="EnemyBomb" gid="2" x="1312" y="32" width="16" height="16">
+   <properties>
+    <property name="Behaviour" value="Empty"/>
+   </properties>
+  </object>
+  <object id="90" type="EnemyBomb" gid="2" x="1312" y="128" width="16" height="16">
+   <properties>
+    <property name="Behaviour" value="Empty"/>
+   </properties>
+  </object>
+  <object id="91" type="EnemyHelicopterGun" gid="3" x="1520" y="32" width="16" height="16">
+   <properties>
+    <property name="Behaviour" value="UpDown"/>
+    <property name="GoingDown" value="false"/>
+    <property name="Range" value="32"/>
+   </properties>
+  </object>
+  <object id="92" type="EnemyHelicopterGun" gid="3" x="1520" y="128" width="16" height="16">
+   <properties>
+    <property name="Behaviour" value="UpDown"/>
+    <property name="GoingDown" value="false"/>
+    <property name="Range" value="32"/>
+   </properties>
+  </object>
+  <object id="93" type="EnemyHelicopterGun" gid="3" x="1536" y="80" width="16" height="16">
+   <properties>
+    <property name="Behaviour" value="UpDown"/>
+    <property name="GoingDown" value="false"/>
+    <property name="Range" value="32"/>
+   </properties>
+  </object>
+  <object id="94" type="EnemyHelicopterGun" gid="3" x="1648" y="160" width="16" height="16">
+   <properties>
+    <property name="Behaviour" value="UpDown"/>
+    <property name="GoingDown" value="false"/>
+    <property name="Range" value="32"/>
+   </properties>
+  </object>
+  <object id="95" type="EnemyHelicopterGun" gid="3" x="1696" y="16" width="16" height="16">
+   <properties>
+    <property name="Behaviour" value="UpDown"/>
+    <property name="GoingDown" value="false"/>
+    <property name="Range" value="32"/>
+   </properties>
+  </object>
+  <object id="96" type="EnemyHelicopterGun" gid="3" x="1744" y="160" width="16" height="16">
+   <properties>
+    <property name="Behaviour" value="UpDown"/>
+    <property name="GoingDown" value="false"/>
+    <property name="Range" value="32"/>
+   </properties>
+  </object>
+  <object id="97" gid="9" x="1696" y="80" width="16" height="16"/>
+  <object id="98" gid="9" x="1792" y="80" width="16" height="16"/>
+  <object id="100" type="EnemySpace" gid="5" x="2064" y="64" width="16" height="16"/>
+  <object id="101" type="EnemySpace" gid="5" x="2016" y="112" width="16" height="16"/>
+  <object id="102" type="EnemyMeteor" gid="6" x="2208" y="22" width="16" height="16">
+   <properties>
+    <property name="Size" value="LG"/>
+   </properties>
+  </object>
+  <object id="103" type="EnemyMeteor" gid="6" x="2208" y="90" width="16" height="16">
+   <properties>
+    <property name="Size" value="LG"/>
+   </properties>
+  </object>
+  <object id="104" type="Coin" gid="8" x="168" y="70" width="16" height="16"/>
+  <object id="105" type="Coin" gid="8" x="184" y="70" width="16" height="16"/>
+  <object id="106" type="Coin" gid="8" x="184" y="88" width="16" height="16"/>
+  <object id="107" type="Coin" gid="8" x="168" y="88" width="16" height="16"/>
+  <object id="108" type="EnemyMeteor" gid="6" x="2352" y="82" width="16" height="16">
+   <properties>
+    <property name="Size" value="SM"/>
+   </properties>
+  </object>
+  <object id="109" type="EnemyMeteor" gid="6" x="2392" y="52" width="16" height="16">
+   <properties>
+    <property name="Size" value="SM"/>
+   </properties>
+  </object>
+  <object id="110" type="EnemyMeteor" gid="6" x="2404" y="24" width="16" height="16">
+   <properties>
+    <property name="Size" value="SM"/>
+   </properties>
+  </object>
+  <object id="111" type="EnemyMeteor" gid="6" x="2400" y="78" width="16" height="16">
+   <properties>
+    <property name="Size" value="SM"/>
+   </properties>
+  </object>
+  <object id="112" type="EnemyMeteor" gid="6" x="2368" y="138" width="16" height="16">
+   <properties>
+    <property name="Size" value="SM"/>
+   </properties>
+  </object>
+  <object id="113" type="EnemyMeteor" gid="6" x="2400" y="138" width="16" height="16">
+   <properties>
+    <property name="Size" value="SM"/>
+   </properties>
+  </object>
+  <object id="114" type="EnemyMeteor" gid="6" x="2376" y="104" width="16" height="16">
+   <properties>
+    <property name="Size" value="MD"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <layer id="9" name="Background" width="270" height="12">
+  <data encoding="base64" compression="zlib">
+   eJzt2LkOwjAQBFDXXA2HBOIsuEQBdMD/fxgTCaQUlh1H3t04midNB8RFPHjtnJwBMkRGyFjwOeTcETkhZ+SCXG2XQz1X39t1k8j31sgG2QY+M0VmyBxZtF2gR2xtITtkjxwUnpXzN2Kq3rgjD+Tp2BskS2pv59Sko6zXYX22qnrjhbyRj2NvkD7JfZr6f1+KJv0ree7gnEIl0TiD59Z0zTn6U+usxDmFyK8vZxWJruWcQl0Se8dT53rre4A/zftRjb7jnEIlSb1XbXMPW+IspI1zChGl4pxClpaepLj9Qro4p5AlX2+k9kdXe2MVSOk4pxDlE+qKWErCOYU0fQEQqRVJ
+  </data>
+ </layer>
+</map>
