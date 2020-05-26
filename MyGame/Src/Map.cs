@@ -31,7 +31,7 @@ namespace MyGame.Src {
 
             foreach (var i in objectsLayer.Objects) {
                 if (i.Type == "Yoda") {
-                    Entity yoda = new Entity(i);
+                    Player yoda = new Player(i);
                     yoda.entityType = "Player";
                     entities.Add(yoda);
                 }

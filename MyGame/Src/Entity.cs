@@ -10,12 +10,12 @@ using MonoGame.Extended.Tiled;
 namespace MyGame.Src {
     public class Entity {
 
-        private TiledMapObject entityTile;
-        private Texture2D texture;
-        private float speed = 1;
-        private Vector2 positionVector;
-        private KeyboardState currentKeyboardState;
-        private KeyboardState previousKeyboardState;
+        protected TiledMapObject entityTile;
+        protected Texture2D texture;
+        protected float speed = 1;
+        protected Vector2 positionVector;
+        protected KeyboardState currentKeyboardState;
+        protected KeyboardState previousKeyboardState;
         public String entityType;
 
         public Entity(TiledMapObject tile) {
@@ -31,35 +31,7 @@ namespace MyGame.Src {
             texture = content.Load<Texture2D>(entityTile.Type);
         }
 
-        public void Update(GameTime gameTime, List<TiledMapTile> collisionTiles) {
-            currentKeyboardState = Keyboard.GetState();
-            Vector2 previsousVector = positionVector;
-
-            if (currentKeyboardState.IsKeyDown(Keys.Up) && previousKeyboardState.IsKeyUp(Keys.Up)) {
-                positionVector -= new Vector2(0, 16);
-            }
-
-            if (currentKeyboardState.IsKeyDown(Keys.Down) && previousKeyboardState.IsKeyUp(Keys.Down)) {
-                positionVector += new Vector2(0, 16);
-            }
-
-            if (currentKeyboardState.IsKeyDown(Keys.Left) && previousKeyboardState.IsKeyUp(Keys.Left)) {
-                positionVector -= new Vector2(16, 0);
-            }
-
-            if (currentKeyboardState.IsKeyDown(Keys.Right) && previousKeyboardState.IsKeyUp(Keys.Right)) {
-                positionVector += new Vector2(16, 0);
-            }
-
-            // COLLISION LOGIC
-            foreach (var tile in collisionTiles) {
-                if ((int)tile.X == ((int)(positionVector.X + 1)/16) && (int)tile.Y == ((int)(positionVector.Y + 1)/16)) {
-                    positionVector = previsousVector;
-                    break;
-                }
-            }
-
-            previousKeyboardState = currentKeyboardState;
+        public virtual void Update(GameTime gameTime, List<TiledMapTile> collisionTiles) {
         }
 
         public void Draw(SpriteBatch spriteBatch) {
