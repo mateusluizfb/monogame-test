@@ -32,8 +32,12 @@ namespace MyGame.Src {
             foreach (var i in objectsLayer.Objects) {
                 if (i.Type == "Yoda") {
                     Player yoda = new Player(i);
-                    yoda.entityType = "Player";
                     entities.Add(yoda);
+                }
+
+                if (i.Type == "Enemy1") {
+                    Enemy1 enemy1 = new Enemy1(i);
+                    entities.Add(enemy1);
                 }
             }
 

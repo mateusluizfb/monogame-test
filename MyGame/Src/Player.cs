@@ -31,7 +31,7 @@ namespace MyGame.Src {
 
             // COLLISION LOGIC
             foreach (var tile in collisionTiles) {
-                if ((int)tile.X == ((int)(positionVector.X + 1) / 16) && (int)tile.Y == ((int)(positionVector.Y + 1) / 16)) {
+                if ((int)tile.X == ((int)(positionVector.X) / 16) && (int)tile.Y == ((int)(positionVector.Y) / 16)) {
                     positionVector = previsousVector;
                     break;
                 }

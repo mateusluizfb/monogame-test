@@ -16,14 +16,13 @@ namespace MyGame.Src {
         protected Vector2 positionVector;
         protected KeyboardState currentKeyboardState;
         protected KeyboardState previousKeyboardState;
-        public String entityType;
 
         public Entity(TiledMapObject tile) {
             entityTile = tile;
 
             positionVector = new Vector2(
-                (int)entityTile.Position.X,
-                (int)entityTile.Position.Y
+                (int)entityTile.Position.X + 1,
+                (int)entityTile.Position.Y + 1
             );
         }
 
